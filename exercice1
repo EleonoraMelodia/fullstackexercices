@@ -1,16 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="it">
-<head>
-<title></title>
-<autor></autor>
-<meta property="og:title" content="Colby Fayock - A UX Designer &amp; Front-end Developer Blog" />
-<meta property="og:type" content="website" />
-<meta property="og:image" content="/static/website-social-card-44070c4a901df708aa1563ac4bbe595a.jpg" />
-<meta property="og:url" content="https://www.colbyfayock.com" />
-
-<link rel="icon" type="image/x-icon" href="favicon.ico" />
-
-</head>
-<body>
-</body>
+  <head>
+    <title>L'uomo che non reggeva l'alcol</title>
+    <autor>Maccio Capatonda</autor>
+    <title>The Rock (1996)</title>
+    <meta property="og:title" content="L'uomo che non reggeva l'alcol" />
+    <meta property="og:type" content="video.movie" />
+    <meta property="og:url" content="https://www.youtube.com/watch?v=9Nv7B9vAOYQ" />
+    <meta
+      property="og:image"
+      content="https://www.parmadaily.it/luomo_che_non_reggeva_lalcol/"
+    />
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico" />
+  </head>
+  <body></body>
 </html>
