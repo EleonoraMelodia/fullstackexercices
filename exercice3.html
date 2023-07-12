@@ -1,6 +1,7 @@
 <!-- Add to the start.html page:
 * a disabled button.
-* an input field with label, in the range of 0-100 and double step (the input type number should have the focus on the opening of the page)
+* an input field with label, in the range of 0-100 and double step
+ (the input type number should have the focus on the opening of the page)
 * a checkbox with label (the checkbox should be already selected)
 * an input date type.-->
 
@@ -14,15 +15,23 @@
   <body>
     <form>
       <label for="not_a_button">can't press this:</label>
-      <input type="button" name="not_a_button" disabled /> <br />
+      <input type="button" name="not_a_button" disabled />
+      <br /><br />
 
-      <label for="myrange">The price</label>
-      <input type="range" name="myrange" min="0" max="100" list="options" />
+      <label for="myrange">Vote this page</label>
+      <input
+        type="range"
+        name="myrange"
+        min="0"
+        max="100"
+        list="options"
+        autofocus
+      />
       <datalist id="options">
-        <option value="25"></option>
+        <option value="50"></option>
         <option value="75"></option>
       </datalist>
-
+      <br /><br />
       <fieldset>
         <!-- probabilmente sarebbe stato più corretto 
             il tag <legend> per descrivere il <fieldset>,
@@ -59,9 +68,9 @@
           </li>
         </ul>
       </fieldset>
-<label for="day">Insert the daily date</label>
-<input type="date" name="day">
-
+      <br /><br />
+      <label for="day">Insert the daily date</label>
+      <input type="date" name="day" />
     </form>
   </body>
 </html>
