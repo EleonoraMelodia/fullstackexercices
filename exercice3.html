@@ -1,0 +1,67 @@
+<!-- Add to the start.html page:
+* a disabled button.
+* an input field with label, in the range of 0-100 and double step (the input type number should have the focus on the opening of the page)
+* a checkbox with label (the checkbox should be already selected)
+* an input date type.-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <label for="not_a_button">can't press this:</label>
+      <input type="button" name="not_a_button" disabled /> <br />
+
+      <label for="myrange">The price</label>
+      <input type="range" name="myrange" min="0" max="100" list="options" />
+      <datalist id="options">
+        <option value="25"></option>
+        <option value="75"></option>
+      </datalist>
+
+      <fieldset>
+        <!-- probabilmente sarebbe stato più corretto 
+            il tag <legend> per descrivere il <fieldset>,
+                 ma ho usato il <label> per fare il tentativo di utilizzare i comandi ARIA e legare il checkbox alla lista-->
+        <label for="list">Please, give your consense:</label>
+        <ul aria-labelledby="list">
+          <li>
+            <label for="privacy"
+              >Agree to our privacy policy
+              <abbr title="required">*</abbr></label
+            >
+            <input
+              type="checkbox"
+              checked
+              name="privacy"
+              value="agreed"
+              required
+            />
+          </li>
+
+          <li>
+            <label for="newsletter">Want to subscribe our newsletter?</label>
+            <input
+              type="checkbox"
+              checked
+              name="newsletter"
+              value="subscribed"
+            />
+          </li>
+
+          <li>
+            <label for="paing">Do you want to join our paid subscription</label>
+            <input type="checkbox" name="paing" value="joined" />
+          </li>
+        </ul>
+      </fieldset>
+<label for="day">Insert the daily date</label>
+<input type="date" name="day">
+
+    </form>
+  </body>
+</html>
