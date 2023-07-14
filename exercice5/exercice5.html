@@ -13,71 +13,80 @@ Billing Address-->
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <form>
+      <label for="e-mail">Insert your e-mail address</label>
+      <input type="Email" name="e-mail" required />
+      <br />
+      <label for="password">Insert a valid password</label>
+      <input
+        type="password"
+        name="password"
+        minlength="6"
+        maxlength="10"
+        required
+        pattern="[A-Za-z0-9]+"
+      />
+      <br />
+      <label for="name">Your name</label>
+      <input type="text" name="name" required pattern="[A-Za-z]+" />
+      <br />
+      <label for="surname">Family name</label>
+      <input type="text" name="surname" required pattern="[A-Za-z]+" />
+      <br />
+      <label for="birthdate">Date of birth</label>
+      <input type="date" name="birthdate" />
+      <br />
+      <label for="telephone">Your mobile number(+39)</label>
+      <input type="Telephone" name="telephone" minlength="10" maxlength="10" />
+      <br />
 
-<form>
-<label for="e-mail">Insert your e-mail address</label>
-<input type="Email" name="e-mail" required>
-<br>
-<label for="password">Insert a valid password</label>
-<input type="password" name="password" minlength="6" maxlength="10" required pattern="[A-Za-z0-9]+">
-<br>
-<label for="name">Your name</label>
-<input type="text" name="name" required pattern="[A-Za-z]+">
-<br>
-<label for="surname">Family name</label>
-<input type="text" name="surname" required pattern="[A-Za-z]+">
-<br>
-<label for="birthdate">Date of birth</label>
-<input type="date" name="birthdate">
-<br>
-<label for="telephone">Your mobile number(+39)</label>
-<input type="Telephone" name="telephone" minlength="10" maxlength="10">
-<br>
+      <label for="plan">Select a payment plane:</label>
+      <select id="plan" name="plan">
+        <option value="free">Plane for free</option>
+        <optgroup label="Planes to pay">
+          <option value="plan1">Steel plane - Price 4,99 € monthly</option>
+          <option value="plan2">Silver plane - Price 9,99 € monthly</option>
+          <option value="plan3">Gold plane 19,99 € monthly</option>
+        </optgroup>
+      </select>
+      <label for="pro">Pro plane 39,99 € monthly</label>
+      <input type="checkbox" name="pro" />
+      <br />
 
-<label for="plan">Select a plane:</label>
-  <select id="plan" name="plan">
-    <option value="free">Plane for free</option>
-    <optgroup label="Planes to pay">
-      <option value="plan1">Steel plane - Price 4,99 € monthly</option>
-      <option value="plan2">Silver plane - Price 9,99 € monthly</option>
-      <option value="plan3">Gold plane 19,99 € monthly</option>
-    </optgroup>
-  </select>
-<label for="pro">Pro plan 39,99 € monthly</label>
-<input type="checkbox" name="pro">
-  <br>
+      <label for="creditcard">Credit card number</label>
+      <input
+        type="number"
+        name="creditcard"
+        minlength="16"
+        maxlength="16"
+        pattern="[0-9]"
+      />
 
-  <label for="creditcard">Credit card number</label>
-  <input type="number" name="creditcard" minlength="16" maxlength="16" pattern="[0-9]">
+      <br />
 
-<br>
+      <label for="cvv">CVV</label>
+      <input
+        type="number"
+        name="cvv"
+        required
+        minlength="3"
+        maxlength="3"
+        pattern="[0-9]"
+      />
 
-<label for="cvv">CVV</label>
-<input type="number" name="cvv" required minlength="3" maxlength="3" pattern="[0-9]">
+      <br />
+      <label for="billingaddress">Your billing address</label>
+      <input type="text" name="billingaddress" required />
+      <br />
 
-<br>
-<label for="billingaddress">Your billing address</label>
-<input type="text" name="billingaddress" required >
-<br>
-
-<label for="submit">Submit</label>
-<input type="submit">
-
-
-</form>
-
-
-
-
-
-
-
-    
-</body>
+      <label for="submit">Submit</label>
+      <input type="submit" />
+    </form>
+  </body>
 </html>
