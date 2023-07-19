@@ -1,0 +1,50 @@
+/* Edit the style.css.
+
+The link1, link2, link3 classes must change the text color and padding so that:
+
+class link1 inherits values from its parent
+class link2 sets the values to the initial ones
+class link3 restores the properties to their natural value
+The paragraphs inside the blockquote with the class content1 must have a solid 1px border.
+The class variant-em must have a greenyellow background, black color/bold text and inherit the font-style from the parent */
+
+
+
+
+body {
+    color: lightslategray;
+  }
+  
+  blockquote {
+    background-color: rgba(0, 12, 24, 0.05); border: solid 10px;
+    font-style: oblique;
+  }
+  
+  a {
+    border: 1px dashed red;
+  }
+  
+  em {
+    color: darkred;
+  }
+  
+  .variant-em { background-color: yellowgreen; color: black; font-weight: bold; font-style: inherit;
+  }
+  
+  ul {
+    background-color: unset;
+    color: blueviolet;
+  }
+  
+  ul li {
+    padding: 16px;
+  }
+  
+  .link1 a { color:inherit; padding: inherit ;
+  }
+  
+  .link2 a { color: initial; padding: initial;
+  }
+  
+  .link3 a { color: unset; padding: unset;}
+  
