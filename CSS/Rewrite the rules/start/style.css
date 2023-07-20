@@ -11,8 +11,8 @@ body {
 }
 
 .ball {
-  width: var(--height);
-  height: var(--width);
+  width: var(--width);
+  height: var(--heigth);
   background-color: var(--orange);
   border-radius: var(--border-radius);
 }
