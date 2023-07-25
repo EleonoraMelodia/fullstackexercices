@@ -1,0 +1,61 @@
+body {
+  width: 60em;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 200px 300px 200px;
+  grid-template-areas:
+    "cgreen cgreen cgreen"
+    "cyellow cred cblue"
+    "corange corange cblue";
+  gap: 15px;
+}
+section {
+  padding: 2em;
+  margin: 1em;
+}
+
+#green {
+  background-color: #8ffda7;
+  grid-area: cgreen;
+}
+
+#orange {
+  background-color: #ffc788;
+  grid-area: corange;
+}
+
+#yellow {
+  background-color: #ffff92;
+  grid-area: cyellow;
+}
+
+#red {
+  background-color: #ff919c;
+  grid-area: cred;
+}
+
+#blue {
+  background-color: #98d2ff;
+  grid-area: cblue;
+}
+
+ul {
+  margin-right: 50px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 30px 30px;
+  grid-template-rows: 30px 30px;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 55px;
+}
+
+li {
+  background-color: white;
+  padding: 1em;
+  display: block;
+  margin: 1em;
+  width: 35px;
+  height: 15px;
+}
