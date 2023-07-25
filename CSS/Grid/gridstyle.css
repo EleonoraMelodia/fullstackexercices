@@ -1,168 +1,152 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-size: 10px;
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
 }
 
-
-
-.zero{
-    grid-area: zero;
- background-color: rgb(68, 67, 67);
- color:  rgb(215, 211, 211);
- border-radius: 7px 7px 0px 0px;
- font-size: 15px;
- text-align: right;
- padding: 8px;
-
+.zero {
+  grid-area: zero;
+  background-color: rgb(68, 67, 67);
+  color: rgb(215, 211, 211);
+  border-radius: 7px 7px 0px 0px;
+  font-size: 15px;
+  text-align: right;
+  padding: 8px;
 }
-.più{
-    grid-area: più;
-    background-color: rgb(215, 211, 211);
-    border-bottom: 1px solid rgba(205, 203, 203, 0.958);
-    border-right: 1px solid rgba(205, 203, 203, 0.958);
-    padding-top: 30%;
-
+.più {
+  grid-area: più;
+  background-color: rgb(215, 211, 211);
+  border-bottom: 1px solid rgba(205, 203, 203, 0.958);
+  border-right: 1px solid rgba(205, 203, 203, 0.958);
+  padding-top: 30%;
 }
-.meno{
-    grid-area: meno;
-    background-color: rgb(215, 211, 211);
-    border-bottom: 1px solid rgba(205, 203, 203, 0.958);
-    border-right: 1px solid rgba(205, 203, 203, 0.958);
-    padding-top: 30%;
+.meno {
+  grid-area: meno;
+  background-color: rgb(215, 211, 211);
+  border-bottom: 1px solid rgba(205, 203, 203, 0.958);
+  border-right: 1px solid rgba(205, 203, 203, 0.958);
+  padding-top: 30%;
 }
-.x{
-    grid-area: x;
-    background-color: rgb(215, 211, 211);
-    border-bottom: 1px solid rgba(205, 203, 203, 0.958);
-    border-right: 1px solid rgba(205, 203, 203, 0.958);
-    padding-top: 30%;
+.x {
+  grid-area: x;
+  background-color: rgb(215, 211, 211);
+  border-bottom: 1px solid rgba(205, 203, 203, 0.958);
+  border-right: 1px solid rgba(205, 203, 203, 0.958);
+  padding-top: 30%;
 }
 
-.diviso{
-    grid-area: diviso;
-    background-color: rgb(215, 211, 211);
-    border-bottom: 1px solid rgba(205, 203, 203, 0.958);
-    padding-top: 30%;
+.diviso {
+  grid-area: diviso;
+  background-color: rgb(215, 211, 211);
+  border-bottom: 1px solid rgba(205, 203, 203, 0.958);
+  padding-top: 30%;
 }
-.sette{
-    grid-area: sette;
-    background-color: rgb(252, 241, 241);
-    border-bottom: 1px solid rgba(205, 203, 203, 0.958);
-    border-right: 1px solid rgba(205, 203, 203, 0.958);
-    padding-top: 30%;
+.sette {
+  grid-area: sette;
+  background-color: rgb(252, 241, 241);
+  border-bottom: 1px solid rgba(205, 203, 203, 0.958);
+  border-right: 1px solid rgba(205, 203, 203, 0.958);
+  padding-top: 30%;
 }
-.otto{
-    grid-area: otto;
-    background-color: rgb(252, 241, 241);
-    border-bottom: 1px solid rgba(205, 203, 203, 0.958);
-    border-right: 1px solid rgba(205, 203, 203, 0.958);
-    padding-top: 30%;
+.otto {
+  grid-area: otto;
+  background-color: rgb(252, 241, 241);
+  border-bottom: 1px solid rgba(205, 203, 203, 0.958);
+  border-right: 1px solid rgba(205, 203, 203, 0.958);
+  padding-top: 30%;
 }
-.nove{
-    grid-area: nove;
-    background-color: rgb(252, 241, 241);
-    border-bottom: 1px solid rgba(205, 203, 203, 0.958);
-    border-right: 1px solid rgba(205, 203, 203, 0.958);
-    padding-top: 30%;
+.nove {
+  grid-area: nove;
+  background-color: rgb(252, 241, 241);
+  border-bottom: 1px solid rgba(205, 203, 203, 0.958);
+  border-right: 1px solid rgba(205, 203, 203, 0.958);
+  padding-top: 30%;
 }
-.quattro{
-    grid-area: quattro;
-    background-color: rgb(252, 241, 241);
-    border-bottom: 1px solid rgba(205, 203, 203, 0.958);
-    border-right: 1px solid rgba(205, 203, 203, 0.958);
-    padding-top: 30%;
+.quattro {
+  grid-area: quattro;
+  background-color: rgb(252, 241, 241);
+  border-bottom: 1px solid rgba(205, 203, 203, 0.958);
+  border-right: 1px solid rgba(205, 203, 203, 0.958);
+  padding-top: 30%;
 }
-.cinque{
-    grid-area: cinque;
-    background-color: rgb(252, 241, 241);
-    border-bottom: 1px solid rgba(205, 203, 203, 0.958);
-    border-right: 1px solid rgba(205, 203, 203, 0.958);
-    padding-top: 30%;
+.cinque {
+  grid-area: cinque;
+  background-color: rgb(252, 241, 241);
+  border-bottom: 1px solid rgba(205, 203, 203, 0.958);
+  border-right: 1px solid rgba(205, 203, 203, 0.958);
+  padding-top: 30%;
 }
-.sei{
-    grid-area: sei;
-    background-color: rgb(252, 241, 241);
-    border-bottom: 1px solid rgba(205, 203, 203, 0.958);
-    border-right: 1px solid rgba(205, 203, 203, 0.958);
-    padding-top: 30%;
-
+.sei {
+  grid-area: sei;
+  background-color: rgb(252, 241, 241);
+  border-bottom: 1px solid rgba(205, 203, 203, 0.958);
+  border-right: 1px solid rgba(205, 203, 203, 0.958);
+  padding-top: 30%;
 }
-.uno{
-    grid-area: uno;
-     background-color: rgb(252, 241, 241);
-     border-bottom: 1px solid rgba(205, 203, 203, 0.958);
-     border-right: 1px solid rgba(205, 203, 203, 0.958);
-     padding-top: 30%;
-
+.uno {
+  grid-area: uno;
+  background-color: rgb(252, 241, 241);
+  border-bottom: 1px solid rgba(205, 203, 203, 0.958);
+  border-right: 1px solid rgba(205, 203, 203, 0.958);
+  padding-top: 30%;
 }
-.due{
-    grid-area: due;
-    background-color: rgb(252, 241, 241);
-    border-bottom: 1px solid rgba(205, 203, 203, 0.958);
-    border-right: 1px solid rgba(205, 203, 203, 0.958);
-    padding-top: 30%;
+.due {
+  grid-area: due;
+  background-color: rgb(252, 241, 241);
+  border-bottom: 1px solid rgba(205, 203, 203, 0.958);
+  border-right: 1px solid rgba(205, 203, 203, 0.958);
+  padding-top: 30%;
 }
-.tre{
-    grid-area: tre;
-    background-color: rgb(252, 241, 241);
-    border-bottom: 1px solid rgba(205, 203, 203, 0.958);
-    border-right: 1px solid rgba(205, 203, 203, 0.958);
-    padding-top: 30%;
-
+.tre {
+  grid-area: tre;
+  background-color: rgb(252, 241, 241);
+  border-bottom: 1px solid rgba(205, 203, 203, 0.958);
+  border-right: 1px solid rgba(205, 203, 203, 0.958);
+  padding-top: 30%;
 }
-.zerodue{
-    grid-area: zerodue;
-    background-color: rgb(252, 241, 241);
-    border-right: 1px solid rgba(205, 203, 203, 0.958);
-    border-radius: 0px 0px 0px 7px;
-    padding-top: 30%;
+.zerodue {
+  grid-area: zerodue;
+  background-color: rgb(252, 241, 241);
+  border-right: 1px solid rgba(205, 203, 203, 0.958);
+  border-radius: 0px 0px 0px 7px;
+  padding-top: 30%;
 }
-.punto{
-    grid-area: punto;
-    background-color: rgb(252, 241, 241);
-    border-right: 1px solid rgba(205, 203, 203, 0.958);
-    padding-top: 30%;
-
+.punto {
+  grid-area: punto;
+  background-color: rgb(252, 241, 241);
+  border-right: 1px solid rgba(205, 203, 203, 0.958);
+  padding-top: 30%;
 }
-.AC{
-    grid-area: AC;
-    background-color: rgb(252, 241, 241);
-    border-right: 1px solid rgba(205, 203, 203, 0.958);   
-    padding-top: 30%;
-
-
+.AC {
+  grid-area: AC;
+  background-color: rgb(252, 241, 241);
+  border-right: 1px solid rgba(205, 203, 203, 0.958);
+  padding-top: 30%;
 }
-.uguale{
-    grid-area: uguale;
-    background-color: rgb(229, 95, 95);
-    border-radius: 0px 0px 7px 0px;
-    padding-top: 130%;
-    
-
+.uguale {
+  grid-area: uguale;
+  background-color: rgb(229, 95, 95);
+  border-radius: 0px 0px 7px 0px;
+  padding-top: 130%;
 }
 
-div{
-display: inline-block;
-text-align: center;
-  
-
+div {
+  display: inline-block;
+  text-align: center;
 }
 
-
-.container{
-    margin: 50px;
-    width: 200px;
-    height: 200px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: 
+.container {
+  margin: 50px;
+  width: 200px;
+  height: 200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
     "zero zero zero zero"
     "più meno x diviso"
     "sette otto nove uguale"
     "quattro cinque sei uguale"
     "uno due tre uguale"
     "zerodue punto AC uguale";
-
 }
