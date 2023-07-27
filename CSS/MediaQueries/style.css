@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+}
+
+div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30px;
+}
+.image {
+  width: 300px;
+  height: 325px;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+}
+
+.icon {
+  width: 10px;
+  height: 10px;
+}
+.card1 {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  border-radius: 20px;
+  border: 5px solid rgb(223, 53, 132);
+  background-color: rgb(242, 110, 137);
+  padding: 20px;
+  height: 550px;
+}
+
+.card2 {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  border-radius: 20px;
+  border: 5px solid rgb(13, 220, 37);
+  background-color: rgb(101, 240, 94);
+  padding: 20px;
+  height: 550px;
+}
+
+.card3 {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  border-radius: 20px;
+  border: 5px solid rgb(220, 61, 13);
+  background-color: rgb(240, 150, 94);
+  padding: 20px;
+  height: 550px;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media (max-width: 375px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
