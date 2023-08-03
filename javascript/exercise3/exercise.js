@@ -1,55 +1,17 @@
-function uncompletedNotes(notes) {
-  // ...
-}
+/*# Arrow functions
 
-const notes = [
-  {
-    id: 1,
-    description: "Workout program",
-    todos: [
-      {
-        id: 1,
-        name: "Push ups - 10 x 3",
-        done: false,
-      },
-      {
-        id: 2,
-        name: "Abdominals - 20 x 3",
-        done: true,
-      },
-      {
-        id: 3,
-        name: "Tapis Roulant - 15min",
-        done: true,
-      },
-    ],
-  },
-  {
-    id: 2,
-    description: "Front-end Roadmap",
-    todos: [
-      {
-        id: 1,
-        name: "Learn HTML",
-        done: true,
-      },
-      {
-        id: 2,
-        name: "Learn CSS",
-        done: true,
-      },
-      {
-        id: 3,
-        name: "Learn JavaScript",
-        done: true,
-      },
-      {
-        id: 4,
-        name: "Learn Angular",
-        done: false,
-      },
-    ],
-  },
-];
+Turn the variables functions into arrow functions and 
+combine the functions so that the result of the following mathematical operation is printed on the console: `((2 + 4) * (5 + 2) - 2) / 5`*/
 
-uncompletedNotes(notes);
+const sum = (a, b) => a + b;
+
+const subtract = (a, b) => a - b;
+
+const multiply = (a, b) => a * b;
+
+const divide = (a, b) => a / b;
+
+const log = (value) => console.log(value);
+
+const result = divide(subtract(multiply(sum(2, 4), sum(5, 2)), 2), 5);
+log(result);

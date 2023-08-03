@@ -1,7 +1,3 @@
-# Array Methods Advanced
+# Arrow functions
 
-Create a function called `uncompletedNotes` that returns only not completed todos.
-
-**Suggestion**
-
-Use the forEach and filter arrays methods.
+Turn the variables functions into arrow functions and combine the functions so that the result of the following mathematical operation is printed on the console: `((2 + 4) * (5 + 2) - 2) / 5`
