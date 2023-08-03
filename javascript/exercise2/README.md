@@ -1,3 +1,3 @@
-# Array Methods Advanced
+# Conditionals & Loops
 
-Create a function called `sortPeopleByAge` that returns the people in ascending order by age.
+Create the function `nicknameMap` using the for loop, which takes in an array of people and returns a `nicknames` array. The nickname must be composed as follows: `<name>-<age>`.
