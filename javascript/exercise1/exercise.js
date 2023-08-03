@@ -6,23 +6,25 @@
 function calculateSalary(role) {
   switch (role) {
     case "ceo":
-      console.log("The salary is 2200");
+      "the salary is" + " " + 2200;
 
       break;
     case "manager":
-      console.log("The salary is 1800");
+      return "the salary is" + " " + 1800;
 
       break;
     case "cto":
-      console.log("The salary is 1800");
+      return "the salary is" + " " + 1800;
 
       break;
     case "developer":
-      console.log("The salary is 1500");
+      return "the salary is" + " " + 1500;
       break;
     case "other":
-      console.log("The salary is 1000");
+      return "the salary is" + " " + 1000;
       break;
+      default: 
+      return "doesn't work here"
   }
 }
 
