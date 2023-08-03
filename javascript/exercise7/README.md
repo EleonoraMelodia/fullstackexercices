@@ -1,3 +1,8 @@
-# Optional Chaining
+# Closures
 
-In this example we are trying to check if a value for the `city` property is defined. However, the code can be simplified. How can we do that?
+Starting from the previous exercise, are you able to print the value of `helloName`, after 1 second?
+
+Tips:
+
+- The method that you need to solve the exercise is: `setTimeout`
+- You can learn more about the topic checking this article: https://www.freecodecamp.org/news/closures-in-javascript/
