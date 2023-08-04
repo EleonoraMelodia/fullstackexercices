@@ -5,13 +5,11 @@ Print in the console the function output.
 
 Example: `multiplyByTwo(4)()`, result: `8`*/
 
-Tips:
-function multiplyByTwo(value) {
+function multiplyByTwo(a) {
   let number = 2;
-
-  function inner (value){
-    return value *= number;
+  function inner() {
+    return number * a;
   }
   return inner;
 }
-console.log(multiplyByTwo()(5));
+console.log(multiplyByTwo(8)());
