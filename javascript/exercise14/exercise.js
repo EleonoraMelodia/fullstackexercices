@@ -1,6 +1,6 @@
 function uncompletedNotes(notes) {
-  notes.forEach(element => { //cicla ogni elemento delle note in todos, che a sua volta filtri per done falso, al che cicli sull'oggetto filtrato stampando l'esito in console
-    element.todos.filter(el => !el.done).forEach(elnotdone => console.log(elnotdone));
+  notes.forEach((element) => {
+    element.todos.filter((el) => !el.done).forEach((el) => console.log(el));
   });
 }
 
