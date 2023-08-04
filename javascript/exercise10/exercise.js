@@ -3,7 +3,7 @@
 const order = {
   customer: {
     address: {
-  city:"Palermo"
+  city:{"Palermo"}
     },
   },
 };
