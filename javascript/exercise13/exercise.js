@@ -1,5 +1,7 @@
 function calculateAverageAge(persons) {
-  persons.age.map.reduce((a,b) => a+b/persons.age.length)
+let ageArr = Object.values(persons).map(el => el.age);
+let sum = ageArr.reduce ((a , b) => a + b );
+return sum/ageArr.length
 }
 
 const persons = [
