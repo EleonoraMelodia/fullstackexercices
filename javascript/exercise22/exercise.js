@@ -1,5 +1,8 @@
-function isAdult(person) {
-  return person.age >= 18;
+
+/*Use the destructuring to make the check of the age easier. Try modifying the parameter of the isAdult function.*/
+
+function isAdult({age}) {
+  return age >= 18;
 }
 
 const person = {
