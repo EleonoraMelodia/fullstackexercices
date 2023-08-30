@@ -11,12 +11,6 @@ class Person {
 
 const developer = new Person(1, "Mario", "Rossi", 25);
 
-let jsonPerson = {
-  "id": 1,
-  "firstName": "Mario",
-  "lastName": "Rossi",
-  "age": 25,
-};
-
-console.log(jsonPerson);
 // Print developer as json object
+const jsonObj = JSON.parse(JSON.stringify(developer));
+console.log(jsonObj);
