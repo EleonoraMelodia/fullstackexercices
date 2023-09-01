@@ -1,6 +1,5 @@
 //Create the `fromJson` method that takes in a json as parameter and returns an object of type `Person`.
 
-
 class Person {
   constructor(id, firstName, lastName, age) {
     this.id = id;
@@ -10,17 +9,20 @@ class Person {
   }
 
   toJson() {
-    return JSON.stringify(this);//trasformo la classe in un oggetto JSON
+    return JSON.stringify(this);
   }
- static fromJson () {
- const newObj = JSON.parse(json); //rendo la stringa json un oggetto in modo da poterla riutiizzare sotto, estrapolando dal JSON object id, firstName...
- return new Person(newObj.id, newObj.firstName, newObj.lastName, newObj.age);
- }
+  static fromJson() {
+    const jsonObj = JSON.parse(json);
+    return new Person(
+      jsonObj.id,
+      jsonObj.firstName,
+      jsonObj.lastName,
+      jsonObj.age
+    );
   }
- 
+}
+
 const json = '{"id":1,"firstName":"Mario","lastName":"Rossi","age":25 }';
 
 const developer = Person.fromJson(json);
 console.log(developer);
-
-
