@@ -1,37 +1,12 @@
-// Starting from the previous exercise, we want to add to our function `repeatHello`, a `clearInterval` after 5 seconds, could you do that?
+let interval;
 
-// Tips:
+function repeatHello(callback) {
+  interval = setInterval(callback, 1000);
+}
 
-// - The `setInterval` and `setTimeout` methods will be useful
+setTimeout(() => {
+  clearInterval(interval), console.log("interval stopped");
+}, 5000);
 
-function printAsyncName(callback, name) {
-    const helloInterval = setInterval(() => {
-      callback();
-    }, 1000);
-  
-    const nameInterval = setInterval(() => {
-      console.log(name);
-    }, 2000);
-  
-    setTimeout(() => {
-      clearInterval(helloInterval);
-      clearInterval(nameInterval);
-    }, 5000);
-  }
-  
-  function sayHello() {
-    console.log("Hello");
-  }
-  
-  function repeatHello(callback, name, interval) {
-    const repeatInterval = setInterval(() => {
-      printAsyncName(callback, name);
-    }, interval);
-  
-    setTimeout(() => {
-      clearInterval(repeatInterval);
-    }, 5000);
-  }
-  
-  repeatHello(sayHello, "Alice", 1000); 
-  
+const callingBack = () => console.log("Hello");
+repeatHello(callingBack);
