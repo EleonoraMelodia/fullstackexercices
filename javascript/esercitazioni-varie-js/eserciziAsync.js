@@ -263,34 +263,227 @@
 // function myPromise (number) {
 //    return new Promise ((resolve, reject) => {
 //     if(number > 10 ) {resolve ("number is greater than 10")}
-//     reject ("the number is not admitted")
-// });
+// //     reject ("the number is not admitted")
+// // });
+// // }
+// // myPromise(12)
+// // .then((result) => console.log(result))
+// // .catch((err) => console.error(err))
+
+// const isBlack = true;
+
+// function promiseOne() {
+//   return new Promise((resolve, reject) => {
+//     if (isBlack) {
+//       resolve(Math.random());
+//     }
+//     reject("error");
+//   });
+// };
+
+// function promiseTwo (num) {
+// return new Promise ((resolve, reject)=>{
+//     if(num > 0.5) {resolve('all ok')}
+//     reject('error num. 5')
+// })
+// };
+
+// promiseOne()
+// .then(promiseTwo)
+// .then((result) => console.log("secondo then" + " " + result))
+// .catch((error) => console.error(error))
+
+// 🍰 Esercizio 1
+// Eseguire una funzione dopo 3 secondi utilizzando setTimeout:
+// setTimeout (function () {
+//   console.log('after three');
+// }, 3000);
+
+// 🍰 Esercizio 2
+// Creare un timer che mostra un messaggio dopo un certo numero di secondi utilizzando setTimeout:
+
+// const timer = 5;
+
+// setTimeout (() => {
+//   console.log(`are passed ${timer} seconds`);
+// }, timer * 1000);
+
+// 🍰 Esercizio 5
+// Mostrare un messaggio di avviso dopo 4 secondi utilizzando setTimeout:
+
+// setTimeout(()=> {
+//   alert('suca')
+// }, 4000);
+
+// 🍰 Esercizio 1
+// Convertire un oggetto JavaScript in una stringa JSON:
+
+// const bikini = {
+//   color: "blue",
+//   model: "sexy",
+//   shiny: "yes",
+// };
+
+// let jsonString = JSON.stringify(bikini);
+// console.log(jsonString);
+
+// 🍰 Esercizio 2
+// Convertire una stringa JSON in un oggetto JavaScript:
+// const newTop = '{"color" : "pink", "season" : "Summer 2023", "occasion" : "party"}'
+
+// let jsObj = JSON.parse(newTop);
+// console.log(jsObj);
+
+// 🍰 Esercizio 3
+// Accedere ai valori di un oggetto JSON:
+// const newTop = '{"color" : "pink", "season" : "Summer 2023", "occasion" : "party"}';
+// let topInObj = JSON.parse(newTop);
+// console.log(topInObj.color, topInObj.season, topInObj.occasion);
+
+// 🍰 Esercizio 4
+// Modificare i valori di un oggetto JSON:
+// const newTop = '{"color" : "pink", "season" : "Summer 2023", "occasion" : "party"}';
+// let topInObj = JSON.parse(newTop);
+// topInObj.color = "green";
+// console.log(topInObj.color);
+// // 🍰 Esercizio 5
+// Aggiungere una nuova proprietà a un oggetto JSON:
+// const newTop = '{"color" : "pink", "season" : "Summer 2023", "occasion" : "party"}';
+// let topInObj = JSON.parse(newTop);
+// topInObj.brand = "Zara";
+// console.log(topInObj);
+
+// 🍰 Esercizio 6
+// Rimuovere una proprietà da un oggetto JSON:
+
+// const newTop = '{"color" : "pink", "season" : "Summer 2023", "occasion" : "party"}';
+// let topInObj = JSON.parse(newTop);
+// delete topInObj.color;
+// console.log(topInObj);
+// 🍰 Esercizio 7
+// Iterare su un array di oggetti JSON:
+
+// const newTop = '[{"color" : "pink", "season" : "Summer 2023", "occasion" : "party"},{"color" : "beige", "season" : "Summer 2023", "occasion" : "Festival"},{"color" : "violet", "season" : "Autumn 2023", "occasion" : "special"}]';
+// let topInObj = JSON.parse(newTop);
+// for(let obj of topInObj) {
+// obj.price = '-30%'
 // }
-// myPromise(12)
-// .then((result) => console.log(result))
-// .catch((err) => console.error(err))
 
-const isBlack = true;
+// let stringOfTops = JSON.stringify(topInObj);
+// console.log(stringOfTops);
 
-function promiseOne() {
-  return new Promise((resolve, reject) => {
-    if (isBlack) {
-      resolve(Math.random());
-    }
-    reject("error");
-  });
-};
+// 🍰 Esercizio 8
+// Filtrare un array di oggetti JSON:
 
-function promiseTwo (num) {
-return new Promise ((resolve, reject)=>{
-    if(num > 0.5) {resolve('all ok')}
-    reject('error num. 5')
-})
-};
+// const newTop =
+//   '[{"color" : "blue", "season" : "Summer 2023", "occasion" : "party"},{"color" : "beige", "season" : "Summer 2023", "occasion" : "Festival"},{"color" : "violet", "season" : "Autumn 2023", "occasion" : "special"}]';
+// let topInObj = JSON.parse(newTop);
+// let newArr = [];
+// for(let obj of topInObj){
+//   newArr.push(obj)
+// }
+// //console.log(newArr);
 
+// let filtered = newArr.filter((el) => el.color.length > 5 );
+// console.log(filtered);
 
-promiseOne()
-.then(promiseTwo)
-.then((result) => console.log("secondo then" + " " + result))
-.catch((error) => console.error(error))
+//creare un nuovo array è inutile, è già un array!
 
+// 🍰 Esercizio 9
+// Ordinare un array di oggetti JSON:
+
+// const newTop =
+//   '[{"color" : "white", "season" : "Summer 2023", "occasion" : "party"},{"color" : "beige", "season" : "Summer 2023", "occasion" : "Festival"},{"color" : "violet", "season" : "Autumn 2023", "occasion" : "special"}]';
+// let topInObj = JSON.parse(newTop);
+// topInObj.sort((a, b) => {
+//   if (a.color < b.color) {
+//     return -1;
+//   } else if (a.color > b.color) {
+//     return 1;
+//   } else {
+//     return 0;
+//   }
+// });
+
+// console.log(topInObj);
+// 🍰 Esercizio 10
+// Salvare un oggetto JSON in un file locale:
+
+// function myFunction (){
+//   let sum = 0;
+//   for(let i = 0; i < 11; i++){
+//   sum += i;
+//   }  return sum;
+// }
+
+// console.log(myFunction());
+
+// 🍰 Esercizio 1
+// Creare una funzione asincrona che attende un certo numero di millisecondi prima di restituire un valore:
+
+// async function attesa(ms) {
+//   await new Promise((resolve) => setTimeout(resolve, ms));
+//   return "Attendi completato";
+// }
+
+// async function esegui() {
+//   const risultato = await attesa(2000);
+//   console.log(risultato);
+// }
+
+// esegui();
+
+// async function waiting(ms) {
+//   await new Promise((resolve) => setTimeout(resolve, ms));
+//   return "loaded!";
+// }
+
+// async function playFuncton () {
+// const result = await waiting (3000);
+// console.log(result);
+// }
+
+// playFuncton();
+
+// 🍰 Esercizio 2
+// Gestire l'errore all'interno di una funzione asincrona utilizzando try/catch:
+
+async function waiting(ms) {
+  await new Promise((resolve, reject) =>
+    setTimeout(() => {
+      if (ms > 1000) {
+        resolve("loaded");
+      } else {
+        reject("unloaded!");
+      }
+    })
+  );
+}
+
+async function playFuncton() {
+  try {
+    const result = await waiting(300);
+    console.log(result);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+playFuncton();
+
+// 🍰 Esercizio 3
+// Utilizzare Promise.all con async e await per eseguire più chiamate asincrone contemporaneamente:
+// 🍰 Esercizio 4
+// Utilizzare await con una funzione che restituisce una promessa:
+// 🍰 Esercizio 5
+// Utilizzare await con una funzione asincrona per ottenere dati da un API:
+// 🍰 Esercizio 6
+// Utilizzare await con una funzione che restituisce una promessa rifiutata:
+// 🍰 Esercizio 7
+// Utilizzare await con una funzione asincrona per ottenere dati da un file:
+// 🍰 Esercizio 8
+// Utilizzare await con una funzione asincrona per ottenere dati da un database fittizio:
+// 🍰 Esercizio 9
+// Utilizzare await con una funzione asincrona per effettuare una chiamata AJAX:
+// 🍰 Esercizio 10
+// Utilizzare await con una funzione asincrona per eseguire operazioni in sequenza:
