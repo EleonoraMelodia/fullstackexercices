@@ -20,14 +20,14 @@
 </html>
 
 <script>
-  let input = document.getElementsByClassName("form-input");
-/*
-  for (let i = 0; i < input.length; i++) {
+  let input = document.querySelectorAll("#firstName, #lastName");
+
+/*  for (let i = 0; i < input.length; i++) {
     inputs = input[i].value;
     console.log(inputs);
-  }
-*/
-  Array.from(input).forEach((element) => {
+  }*/
+
+  input.forEach((element) => {
     console.log(element.value);
   });
 
